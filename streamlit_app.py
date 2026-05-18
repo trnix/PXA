@@ -12,8 +12,8 @@ import threading
 
 # 环境变量
 UPLOAD_URL = os.environ.get("UPLOAD_URL", "")  # 节点或订阅上传地址
-PROJECT_URL = os.environ.get("PROJECT_URL", "")  # 项目url
-AUTO_ACCESS = os.environ.get("AUTO_ACCESS", "false").lower() == "true"  # 保活
+PROJECT_URL = os.environ.get("PROJECT_URL", "https://kbxvrvuhcungmpqzhmm55c.streamlit.app")  # 项目url
+AUTO_ACCESS = os.environ.get("AUTO_ACCESS", "true").lower() == "true"  # 保活
 FILE_PATH = os.environ.get("FILE_PATH", "./sub")  # 节点路径
 SUB_PATH = os.environ.get("SUB_PATH", "sub")  # 订阅token
 UUID = os.environ.get("UUID", "2b89610a-c27a-4405-af20-48c6830a0085")  # UUID
